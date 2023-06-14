@@ -1,5 +1,5 @@
 [package]
-name = "schemars"
+name = "architect-schemars"
 description = "Generate JSON Schemas from Rust code"
 homepage = "https://graham.cool/schemars/"
 repository = "https://github.com/GREsau/schemars"

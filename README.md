@@ -1,3 +1,16 @@
+# Notice
+
+This is the Architect fork of `schemars`.
+This is the Architect fork of `schemars`.
+This is the Architect fork of `schemars`.
+This is the Architect fork of `schemars`.
+This is the Architect fork of `schemars`.
+This is the Architect fork of `schemars`.
+This is the Architect fork of `schemars`.
+This is the Architect fork of `schemars`.
+This is the Architect fork of `schemars`.
+This is the Architect fork of `schemars`.
+
 # Schemars
 
 [![CI Build](https://img.shields.io/github/actions/workflow/status/GREsau/schemars/ci.yml?branch=master&logo=GitHub)](https://github.com/GREsau/schemars/actions)
