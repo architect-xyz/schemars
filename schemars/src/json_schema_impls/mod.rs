@@ -35,6 +35,8 @@ macro_rules! forward_impl {
     };
 }
 
+#[cfg(feature = "arcstr")]
+mod arcstr;
 mod array;
 #[cfg(feature = "arrayvec05")]
 mod arrayvec05;
@@ -46,17 +48,23 @@ mod atomic;
 mod bytes;
 #[cfg(feature = "chrono")]
 mod chrono;
+#[cfg(feature = "compact_str")]
+mod compact_str;
 mod core;
 #[cfg(any(feature = "rust_decimal", feature = "bigdecimal"))]
 mod decimal;
 #[cfg(feature = "either")]
 mod either;
+#[cfg(feature = "enumflags2")]
+mod enumflags2;
 #[cfg(feature = "enumset")]
 mod enumset;
 mod ffi;
 #[cfg(feature = "indexmap")]
 mod indexmap;
 mod maps;
+#[cfg(feature = "netidx-core")]
+mod netidx;
 mod nonzero_signed;
 mod nonzero_unsigned;
 mod primitives;
@@ -75,7 +83,3 @@ mod uuid08;
 #[cfg(feature = "uuid1")]
 mod uuid1;
 mod wrapper;
-#[cfg(feature = "netidx-core")]
-mod netidx;
-#[cfg(feature = "enumflags2")]
-mod enumflags2;

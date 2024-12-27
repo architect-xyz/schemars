@@ -1,9 +1,8 @@
-use std::collections::HashSet;
-
 use crate::{ast::*, attr::WithAttr, metadata::SchemaMetadata};
 use proc_macro2::{Span, TokenStream};
 use serde_derive_internals::ast::Style;
 use serde_derive_internals::attr::{self as serde_attr, Default as SerdeDefault, TagType};
+use std::collections::HashSet;
 use syn::spanned::Spanned;
 
 pub fn expr_for_container(cont: &Container) -> TokenStream {
