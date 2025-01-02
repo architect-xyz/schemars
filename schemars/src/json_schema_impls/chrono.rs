@@ -2,6 +2,7 @@ use crate::gen::SchemaGenerator;
 use crate::schema::*;
 use crate::JsonSchema;
 use chrono::prelude::*;
+use chrono_tz::TZ_VARIANTS;
 use serde_json::json;
 
 impl JsonSchema for Weekday {
@@ -57,3 +58,22 @@ formatted_string_impl!(NaiveDate, "date");
 formatted_string_impl!(NaiveDateTime, "partial-date-time");
 formatted_string_impl!(NaiveTime, "partial-date-time");
 formatted_string_impl!(DateTime, "date-time", <Tz: TimeZone> JsonSchema for DateTime<Tz>);
+
+impl JsonSchema for chrono_tz::Tz {
+    fn schema_name() -> String {
+        "TimeZone".to_owned()
+    }
+
+    fn json_schema(_: &mut SchemaGenerator) -> Schema {
+        SchemaObject {
+            instance_type: Some(InstanceType::String.into()),
+            enum_values: Some(TZ_VARIANTS.to_vec().iter().map(|v| json!(*v)).collect()),
+            ..Default::default()
+        }
+        .into()
+    }
+
+    fn is_referenceable() -> bool {
+        true
+    }
+}
