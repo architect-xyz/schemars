@@ -1,9 +1,9 @@
 [package]
-name = "schemars_derive"
+name = "architect-schemars_derive"
 description = "Macros for #[derive(JsonSchema)], for use with schemars"
 homepage = "https://graham.cool/schemars/"
 repository = "https://github.com/GREsau/schemars"
-version = "0.8.22"
+version = "1.2.0"
 authors = ["Graham Esau <gesau@hotmail.co.uk>"]
 edition = "2021"
 license = "MIT"
