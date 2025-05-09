@@ -4,7 +4,7 @@ version = 3
 
 [[package]]
 name = "architect-schemars"
-version = "0.8.22"
+version = "1.2.0"
 dependencies = [
  "architect-schemars_derive",
  "arrayvec 0.5.2",
@@ -33,7 +33,7 @@ dependencies = [
 
 [[package]]
 name = "architect-schemars_derive"
-version = "0.8.22"
+version = "1.2.0"
 dependencies = [
  "pretty_assertions",
  "proc-macro2",
